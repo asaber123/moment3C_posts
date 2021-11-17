@@ -1,0 +1,15 @@
+/Users/asaberglund/Desktop/moment3C/bin/Debug/net5.0/moment3C.deps.json
+/Users/asaberglund/Desktop/moment3C/bin/Debug/net5.0/moment3C.runtimeconfig.json
+/Users/asaberglund/Desktop/moment3C/bin/Debug/net5.0/moment3C.runtimeconfig.dev.json
+/Users/asaberglund/Desktop/moment3C/bin/Debug/net5.0/moment3C.dll
+/Users/asaberglund/Desktop/moment3C/bin/Debug/net5.0/ref/moment3C.dll
+/Users/asaberglund/Desktop/moment3C/bin/Debug/net5.0/moment3C.pdb
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.csproj.AssemblyReference.cache
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.GeneratedMSBuildEditorConfig.editorconfig
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.AssemblyInfoInputs.cache
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.AssemblyInfo.cs
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.csproj.CoreCompileInputs.cache
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.dll
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/ref/moment3C.dll
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.pdb
+/Users/asaberglund/Desktop/moment3C/obj/Debug/net5.0/moment3C.genruntimeconfig.cache
