@@ -94,7 +94,7 @@ namespace Posts
                 i = 0;
                 foreach (Post post in guestbook.getPosts())
                 {
-                    Console.WriteLine("[" + i++ + "] " + post.Author + "\n\n" + post.Text );
+                    Console.WriteLine("[" + i++ + "] " + post.Author + "\n" + post.Text + "\n\n");
                 }
 
                 string inp = Console.ReadLine().ToLower();
