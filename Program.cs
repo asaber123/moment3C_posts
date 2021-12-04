@@ -64,7 +64,11 @@ namespace Posts
         private string text;
         public string Author
         {
-            set { this.author = value; }
+            set
+            {
+                this.author = value;
+
+            }
             get { return this.author; }
         }
         public string Text
@@ -101,15 +105,37 @@ namespace Posts
                 switch (inp)
                 {
                     case "1":
+
                         Console.CursorVisible = true;
-                        Console.Write("Ange namn: ");
-                        string author = Console.ReadLine();
-                        Console.Write("Skriv inlägg: ");
-                        string text = Console.ReadLine();
                         Post obj = new Post();
+                        string author;
+                        string text;
+                        do
+                        {
+                            Console.Write("Ange namn: ");
+                            author = Console.ReadLine();
+                            if (String.IsNullOrEmpty(author))
+                            {
+                                Console.Write("Du måste ange ett namn\n");
+
+                            }
+
+                        } while (String.IsNullOrEmpty(author));
                         obj.Author = author;
+                        do
+                        {
+
+                            Console.Write("Skriv inlägg: ");
+                            text = Console.ReadLine();
+                            if (String.IsNullOrEmpty(text))
+                            {
+                                Console.Write("Du måste skriva någon text för ditt inlägg\n");
+
+                            }
+                        }while (String.IsNullOrEmpty(text));
                         obj.Text = text;
                         guestbook.addPost(obj);
+
                         break;
                     case "2":
                         Console.CursorVisible = true;
