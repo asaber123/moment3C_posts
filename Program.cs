@@ -28,11 +28,11 @@ namespace Posts
     {   //Making a list to stora data
 
         private List<Post> posts = new List<Post>();
-        private string filename = @"guestbook.json";
+        private string filename = @"postguestbook.json";
         //Constructor 
         public GuestBook(){
             //Checking if file exist
-            if (File.Exists(@"guestbook.json") == true)
+            if (File.Exists(@"postguestbook.json") == true)
             {
                 //Serialise and desirialise data to json format. 
                 string jsonString = File.ReadAllText(filename);
@@ -95,9 +95,7 @@ namespace Posts
                 i = 0;
                 foreach (Post post in guestbook.getPosts())
                 {
-                    Console.WriteLine("[" + i++ + "] " + post.Author + 
-                    // "\n" + post.Text + 
-                    "\n\n");
+                    Console.WriteLine("[" + i++ + "] " + post.Author + "\n" + post.Text + "\n\n");
                 }
                 //Reading the users input. The function readkey reacs without user pressing enter. 
                 int input = (int) Console.ReadKey(true).Key;
@@ -132,13 +130,13 @@ namespace Posts
                         } while (String.IsNullOrEmpty(text));
                         guestbook.addPost(author, text);
                         break;
-                    case 2:
+                    case '2':
                         Console.CursorVisible = true;
                         Console.Write("Ange index att radera: ");
                         string index = Console.ReadLine();
                         guestbook.delPost(Convert.ToInt32(index));
                         break;
-                    case 3:
+                    case '3':
                         Environment.Exit(0);
                         break;
                 }
