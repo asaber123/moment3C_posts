@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-//using System.Runtime.Serialization;
-//using System.Runtime.Serialization.Formatters.Binary;
-
-
 namespace Posts
 {
+    //Making a class  for the posts with setters and getters
     public class Post
     {
         private string author;
@@ -101,12 +98,12 @@ namespace Posts
                 int input = (int) Console.ReadKey(true).Key;
                 switch (input)
                 {
-                    case '1':
+                    case '1': //Case one, a new post is set
                         Console.CursorVisible = true;
                         Post obj = new Post();
                         string author;
                         string text;
-                        do
+                        do //Making a do while loop that runns until the user have set an input with name
                         {
                             Console.Write("Ange namn: ");
                             author = Console.ReadLine();
@@ -117,7 +114,7 @@ namespace Posts
                             }
 
                         } while (String.IsNullOrEmpty(author));
-                        do
+                        do//Making a do while loop that runns until the user have set an input with a text
                         {
 
                             Console.Write("Skriv inlägg: ");
@@ -128,15 +125,19 @@ namespace Posts
 
                             }
                         } while (String.IsNullOrEmpty(text));
+                        //Then sending data into the function addPost
                         guestbook.addPost(author, text);
                         break;
                     case '2':
+                        //Case 2, user choose an index of the post to delete
                         Console.CursorVisible = true;
                         Console.Write("Ange index att radera: ");
                         string index = Console.ReadLine();
+                        //Converting users inout uínto an interger and then send it into the function delete post
                         guestbook.delPost(Convert.ToInt32(index));
                         break;
                     case '3':
+                    //Exit the terminal
                         Environment.Exit(0);
                         break;
                 }
